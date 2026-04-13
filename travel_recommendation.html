@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="home-container">
+    <nav class="navbar">
+        <img src="images/logo.png" alt="Travel Logo" id="logo">
+        <h3 id="company-name">TravelBloom</h3>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="travel_recommendation.html">Home</a></li>
+            <li class="nav-link"><a href="aboutus.html">About Us</a></li>
+            <li class="nav-link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Enter a destination or keyword" name="search" id="search-input">
+            <img src="images/search-icon.png" alt="Search Icon" id="search-icon">
+            <button type="submit" id="submit">Search</button>
+            <button type="reset" id="reset">Clear</button>
+        </div>
+    </nav>
+
+    <section class="home-content">
+        <h2>Discover Your Next Adventure</h2>
+        <p>Explore the world’s most beautiful destinations and create unforgettable travel experiences with TravelBloom.
+        </p>
+
+        <button id="book-now">Book Now</button>
+    </section>
+
+    <section id="results"></section>
+
+    <footer class="footer">
+        <p id="copy-right">&copy; 2026 TravelBloom. All rights reserved.</p>
+
+        <section class="social-media-links">
+            <a href="#" class="fa"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="fa"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="fa"><i class="fa-brands fa-instagram"></i></a>
+        </section>
+    </footer>
+
+    <script src="js/travel_recommendation.js"></script>
+
+</body>
+
+</html>
