@@ -244,7 +244,6 @@ nav {
 .team-container {
     position: relative;
     z-index: 1;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.1);
     margin: 50px auto;
@@ -323,7 +322,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.1);
-    max-width: 50%;
+    width: 50%;
     margin: 50px auto;
 }
 

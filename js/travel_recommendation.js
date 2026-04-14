@@ -17,7 +17,13 @@ function handleSearch() {
     } else if (input.includes("temple")) {
         showResults(data.temples);
     } else if (input.includes("country")) {
-        showResults(data.countries);
+        let allCities = [];
+
+        data.countries.forEach(country => {
+            allCities = allCities.concat(country.cities);
+        });
+
+        showResults(allCities);
     } else {
         resultsContainer.innerHTML = "";
 
@@ -35,7 +41,7 @@ function showResults(places) {
 
         card.innerHTML = `
       <h3>${place.name}</h3>
-      <img src="${place.imageUrl}" width="200">
+      <img src="${place.imageUrl}" width="200" height="150" alt="${place.name}">
       <p>${place.description}</p>
     `;
 
